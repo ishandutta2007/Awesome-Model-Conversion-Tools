@@ -61,104 +61,104 @@ The following hosted and cloud-native platforms automate model conversion, hardw
 
 ## 🛠️ Open-Source GitHub Projects
 
-The premier open-source conversion libraries, transpilers, intermediate representations, and inference graph compilers. Entries are strictly sorted in descending order by **GitHub Star Count**.
+The premier open-source conversion libraries, transpilers, intermediate representations, and inference graph compilers. Entries are strictly sorted in descending order by **GitHub Stars_Count**.
 
-1. ### 📦 [TensorFlow Lite Converter (tensorflow/tensorflow)](https://github.com/tensorflow/tensorflow) [![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social&color=white)](https://github.com/tensorflow/tensorflow/stargazers)
+1. ### 📦 [TensorFlow Lite Converter (tensorflow/tensorflow)](https://github.com/tensorflow/tensorflow) [![GitHub_Stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social&color=white)](https://github.com/tensorflow/tensorflow/stargazers)
    - **Focus**: The official model conversion pipeline translating TensorFlow, Keras, and SavedModel graphs into `.tflite` format.
    - **Highlights**: Features comprehensive post-training quantization (PTQ: dynamic range, full integer INT8, float16) and micro-controller kernels (TFLite Micro).
    - **License**: Apache 2.0
 
-2. ### ⚡ [ncnn (Tencent/ncnn)](https://github.com/Tencent/ncnn) [![GitHub stars](https://img.shields.io/github/stars/Tencent/ncnn?style=social&color=white)](https://github.com/Tencent/ncnn/stargazers)
+2. ### ⚡ [ncnn (Tencent/ncnn)](https://github.com/Tencent/ncnn) [![GitHub_Stars](https://img.shields.io/github/stars/Tencent/ncnn?style=social&color=white)](https://github.com/Tencent/ncnn/stargazers)
    - **Focus**: High-performance neural network inference framework optimized specifically for mobile platforms, featuring converters for ONNX, Caffe, and Darknet.
    - **Highlights**: Zero third-party dependencies, fine-tuned ARM NEON assembly optimizations, Vulkan GPU acceleration, and dedicated `onnx2ncnn` transpiler tools.
    - **License**: BSD 3-Clause
 
-3. ### 🚀 [ONNX Runtime (microsoft/onnxruntime)](https://github.com/microsoft/onnxruntime) [![GitHub stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social&color=white)](https://github.com/microsoft/onnxruntime/stargazers)
+3. ### 🚀 [ONNX Runtime (microsoft/onnxruntime)](https://github.com/microsoft/onnxruntime) [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social&color=white)](https://github.com/microsoft/onnxruntime/stargazers)
    - **Focus**: Cross-platform, high-performance ML inference and training accelerator engine with built-in graph optimization and transformer conversion utilities.
    - **Highlights**: Pluggable Execution Providers (DirectML, TensorRT, OpenVINO, CoreML, CUDA), offline graph optimizations, and INT8/FP8 quantization tools.
    - **License**: MIT
 
-4. ### 🌐 [ONNX (onnx/onnx)](https://github.com/onnx/onnx) [![GitHub stars](https://img.shields.io/github/stars/onnx/onnx?style=social&color=white)](https://github.com/onnx/onnx/stargazers)
+4. ### 🌐 [ONNX (onnx/onnx)](https://github.com/onnx/onnx) [![GitHub_Stars](https://img.shields.io/github/stars/onnx/onnx?style=social&color=white)](https://github.com/onnx/onnx/stargazers)
    - **Focus**: The universal open standard and intermediate representation (IR) format for machine learning interoperability across training and inference ecosystems.
    - **Highlights**: The central interchange hub connecting PyTorch, TensorFlow, Scikit-Learn, MXNet, TensorRT, OpenVINO, Core ML, and hardware compilers worldwide.
    - **License**: Apache 2.0
 
-5. ### 📱 [MNN (alibaba/MNN)](https://github.com/alibaba/MNN) [![GitHub stars](https://img.shields.io/github/stars/alibaba/MNN?style=social&color=white)](https://github.com/alibaba/MNN/stargazers)
+5. ### 📱 [MNN (alibaba/MNN)](https://github.com/alibaba/MNN) [![GitHub_Stars](https://img.shields.io/github/stars/alibaba/MNN?style=social&color=white)](https://github.com/alibaba/MNN/stargazers)
    - **Focus**: Universal deep learning compiler and lightweight inference engine with built-in multi-framework model converters (`MNNConverter`).
    - **Highlights**: Translates ONNX, TensorFlow, TFLite, Caffe, and TorchScript models into optimized MNN computational graphs with quantization and winograd convolution support.
    - **License**: Apache 2.0
 
-6. ### 📺 [Apache TVM (apache/tvm)](https://github.com/apache/tvm) [![GitHub stars](https://img.shields.io/github/stars/apache/tvm?style=social&color=white)](https://github.com/apache/tvm/stargazers)
+6. ### 📺 [Apache TVM (apache/tvm)](https://github.com/apache/tvm) [![GitHub_Stars](https://img.shields.io/github/stars/apache/tvm?style=social&color=white)](https://github.com/apache/tvm/stargazers)
    - **Focus**: Open-source machine learning compiler framework for CPUs, GPUs, and specialized hardware accelerators.
    - **Highlights**: Compiles models directly from ONNX, PyTorch, and TensorFlow into bare-metal binary code using machine-learning-driven auto-tuning (AutoTVM/MetaSchedule).
    - **License**: Apache 2.0
 
-7. ### 🏎️ [TensorRT (NVIDIA/TensorRT)](https://github.com/NVIDIA/TensorRT) [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/TensorRT?style=social&color=white)](https://github.com/NVIDIA/TensorRT/stargazers)
+7. ### 🏎️ [TensorRT (NVIDIA/TensorRT)](https://github.com/NVIDIA/TensorRT) [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/TensorRT?style=social&color=white)](https://github.com/NVIDIA/TensorRT/stargazers)
    - **Focus**: NVIDIA's premier software development kit for high-performance deep learning inference compilation on NVIDIA GPUs.
    - **Highlights**: Includes the open-source `trtexec` CLI and parsers to compile ONNX networks into highly fused, precision-calibrated (INT8, FP16, FP8) GPU execution plans.
    - **License**: Apache 2.0
 
-8. ### 🧩 [OpenVINO Toolkit (openvinotoolkit/openvino)](https://github.com/openvinotoolkit/openvino) [![GitHub stars](https://img.shields.io/github/stars/openvinotoolkit/openvino?style=social&color=white)](https://github.com/openvinotoolkit/openvino/stargazers)
+8. ### 🧩 [OpenVINO Toolkit (openvinotoolkit/openvino)](https://github.com/openvinotoolkit/openvino) [![GitHub_Stars](https://img.shields.io/github/stars/openvinotoolkit/openvino?style=social&color=white)](https://github.com/openvinotoolkit/openvino/stargazers)
    - **Focus**: Intel's comprehensive open-source toolkit for optimizing and deploying deep learning models across Intel CPUs, iGPUs, and NPUs.
    - **Highlights**: Features the `ovc` (OpenVINO Converter) CLI to convert ONNX, TensorFlow, PyTorch, and PaddlePaddle models into Intermediate Representation (`.xml` + `.bin`).
    - **License**: Apache 2.0
 
-9. ### 🍏 [Core ML Tools (apple/coremltools)](https://github.com/apple/coremltools) [![GitHub stars](https://img.shields.io/github/stars/apple/coremltools?style=social&color=white)](https://github.com/apple/coremltools/stargazers)
+9. ### 🍏 [Core ML Tools (apple/coremltools)](https://github.com/apple/coremltools) [![GitHub_Stars](https://img.shields.io/github/stars/apple/coremltools?style=social&color=white)](https://github.com/apple/coremltools/stargazers)
    - **Focus**: Apple's unified Python conversion package to convert trained models from PyTorch and TensorFlow into Apple Core ML (`.mlpackage`) format.
    - **Highlights**: Direct PyTorch-to-CoreML unified converter, automatic partition execution targeting Apple Neural Engine (ANE), and post-training compression/quantization.
    - **License**: BSD 3-Clause
 
-10. ### 🔀 [torch2trt (NVIDIA-AI-IOT/torch2trt)](https://github.com/NVIDIA-AI-IOT/torch2trt) [![GitHub stars](https://img.shields.io/github/stars/NVIDIA-AI-IOT/torch2trt?style=social&color=white)](https://github.com/NVIDIA-AI-IOT/torch2trt/stargazers)
+10. ### 🔀 [torch2trt (NVIDIA-AI-IOT/torch2trt)](https://github.com/NVIDIA-AI-IOT/torch2trt) [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA-AI-IOT/torch2trt?style=social&color=white)](https://github.com/NVIDIA-AI-IOT/torch2trt/stargazers)
     - **Focus**: PyTorch-to-TensorRT converter utilizing TensorRT Python APIs for fast, direct PyTorch model acceleration without manual ONNX export steps.
     - **Highlights**: Allows in-place conversion of PyTorch `nn.Module` models with direct fallback to PyTorch operations when unsupported layers appear.
     - **License**: Apache 2.0
 
-11. ### 🦁 [PINTO Model Zoo (PINTO0309/PINTO_model_zoo)](https://github.com/PINTO0309/PINTO_model_zoo) [![GitHub stars](https://img.shields.io/github/stars/PINTO0309/PINTO_model_zoo?style=social&color=white)](https://github.com/PINTO0309/PINTO_model_zoo/stargazers)
+11. ### 🦁 [PINTO Model Zoo (PINTO0309/PINTO_model_zoo)](https://github.com/PINTO0309/PINTO_model_zoo) [![GitHub_Stars](https://img.shields.io/github/stars/PINTO0309/PINTO_model_zoo?style=social&color=white)](https://github.com/PINTO0309/PINTO_model_zoo/stargazers)
     - **Focus**: Extensive repository containing conversion scripts, shell pipelines, and post-quantized models across TensorFlow, ONNX, OpenVINO, TFLite, and Myriad.
     - **Highlights**: Indispensable real-world reference for handling edge cases, dynamic shape resolution, and cross-framework layer discrepancies.
     - **License**: MIT
 
-12. ### 🧹 [onnxsim / ONNX Simplifier (daquexian/onnx-simplifier)](https://github.com/daquexian/onnx-simplifier) [![GitHub stars](https://img.shields.io/github/stars/daquexian/onnx-simplifier?style=social&color=white)](https://github.com/daquexian/onnx-simplifier/stargazers)
+12. ### 🧹 [onnxsim / ONNX Simplifier (daquexian/onnx-simplifier)](https://github.com/daquexian/onnx-simplifier) [![GitHub_Stars](https://img.shields.io/github/stars/daquexian/onnx-simplifier?style=social&color=white)](https://github.com/daquexian/onnx-simplifier/stargazers)
     - **Focus**: Graph simplification tool that eliminates redundant operations in exported ONNX computational graphs.
     - **Highlights**: Executes constant folding, dead-code pruning, and shape inference to produce clean, simplified models ready for downstream compilation in TensorRT or OpenVINO.
     - **License**: Apache 2.0
 
-13. ### 🐦 [Hummingbird (microsoft/hummingbird)](https://github.com/microsoft/hummingbird) [![GitHub stars](https://img.shields.io/github/stars/microsoft/hummingbird?style=social&color=white)](https://github.com/microsoft/hummingbird/stargazers)
+13. ### 🐦 [Hummingbird (microsoft/hummingbird)](https://github.com/microsoft/hummingbird) [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/hummingbird?style=social&color=white)](https://github.com/microsoft/hummingbird/stargazers)
     - **Focus**: Compiles traditional machine learning algorithms (Scikit-Learn, LightGBM, XGBoost) into tensor computations.
     - **Highlights**: Transpiles decision trees and linear models into PyTorch, TorchScript, ONNX, or TVM tensors to leverage GPU acceleration and neural network execution pipelines.
     - **License**: MIT
 
-14. ### 🔗 [ONNX-TensorRT (onnx/onnx-tensorrt)](https://github.com/onnx/onnx-tensorrt) [![GitHub stars](https://img.shields.io/github/stars/onnx/onnx-tensorrt?style=social&color=white)](https://github.com/onnx/onnx-tensorrt/stargazers)
+14. ### 🔗 [ONNX-TensorRT (onnx/onnx-tensorrt)](https://github.com/onnx/onnx-tensorrt) [![GitHub_Stars](https://img.shields.io/github/stars/onnx/onnx-tensorrt?style=social&color=white)](https://github.com/onnx/onnx-tensorrt/stargazers)
     - **Focus**: The official open-source ONNX parser repository utilized by NVIDIA TensorRT.
     - **Highlights**: Programmatically parses ONNX computational graphs directly into TensorRT network definitions for custom C++ and Python inference engines.
     - **License**: Apache 2.0
 
-15. ### 🔄 [tf2onnx (onnx/tensorflow-onnx)](https://github.com/onnx/tensorflow-onnx) [![GitHub stars](https://img.shields.io/github/stars/onnx/tensorflow-onnx?style=social&color=white)](https://github.com/onnx/tensorflow-onnx/stargazers)
+15. ### 🔄 [tf2onnx (onnx/tensorflow-onnx)](https://github.com/onnx/tensorflow-onnx) [![GitHub_Stars](https://img.shields.io/github/stars/onnx/tensorflow-onnx?style=social&color=white)](https://github.com/onnx/tensorflow-onnx/stargazers)
     - **Focus**: Robust converter transpiling TensorFlow (1.x and 2.x), Keras, SavedModel, and TFLite files directly to the ONNX graph format.
     - **Highlights**: Maintains deep operator mappings, supporting complex control-flow operations and frozen graphs.
     - **License**: Apache 2.0
 
-16. ### 🫒 [Olive (microsoft/Olive)](https://github.com/microsoft/Olive) [![GitHub stars](https://img.shields.io/github/stars/microsoft/Olive?style=social&color=white)](https://github.com/microsoft/Olive/stargazers)
+16. ### 🫒 [Olive (microsoft/Olive)](https://github.com/microsoft/Olive) [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/Olive?style=social&color=white)](https://github.com/microsoft/Olive/stargazers)
     - **Focus**: Microsoft's extensible, hardware-aware model conversion and optimization pipeline framework.
     - **Highlights**: Automates model composition, pruning, INT4/INT8 quantization, ONNX export, and tuning across target accelerators (DirectML, QNN, OpenVINO, TensorRT).
     - **License**: MIT
 
-17. ### 🌲 [onnxmltools (onnx/onnxmltools)](https://github.com/onnx/onnxmltools) [![GitHub stars](https://img.shields.io/github/stars/onnx/onnxmltools?style=social&color=white)](https://github.com/onnx/onnxmltools/stargazers)
+17. ### 🌲 [onnxmltools (onnx/onnxmltools)](https://github.com/onnx/onnxmltools) [![GitHub_Stars](https://img.shields.io/github/stars/onnx/onnxmltools?style=social&color=white)](https://github.com/onnx/onnxmltools/stargazers)
     - **Focus**: Transpiles models from Scikit-Learn, LightGBM, XGBoost, CoreML, and LibSVM into the ONNX standard.
     - **Highlights**: Enables classical tabular models to be exported into intermediate representation formats for standardized serving via ONNX Runtime.
     - **License**: Apache 2.0
 
-18. ### 🛶 [Paddle2ONNX (PaddlePaddle/Paddle2ONNX)](https://github.com/PaddlePaddle/Paddle2ONNX) [![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/Paddle2ONNX?style=social&color=white)](https://github.com/PaddlePaddle/Paddle2ONNX/stargazers)
+18. ### 🛶 [Paddle2ONNX (PaddlePaddle/Paddle2ONNX)](https://github.com/PaddlePaddle/Paddle2ONNX) [![GitHub_Stars](https://img.shields.io/github/stars/PaddlePaddle/Paddle2ONNX?style=social&color=white)](https://github.com/PaddlePaddle/Paddle2ONNX/stargazers)
     - **Focus**: Model conversion tool that exports PaddlePaddle framework models to ONNX format.
     - **Highlights**: Supports over 200+ PaddlePaddle models spanning vision, OCR, speech, and NLP into standardized ONNX architectures.
     - **License**: Apache 2.0
 
-19. ### 🌳 [Treelite (dmlc/treelite)](https://github.com/dmlc/treelite) [![GitHub stars](https://img.shields.io/github/stars/dmlc/treelite?style=social&color=white)](https://github.com/dmlc/treelite/stargazers)
+19. ### 🌳 [Treelite (dmlc/treelite)](https://github.com/dmlc/treelite) [![GitHub_Stars](https://img.shields.io/github/stars/dmlc/treelite?style=social&color=white)](https://github.com/dmlc/treelite/stargazers)
     - **Focus**: Universal model compiler specifically engineered for tree ensembles (XGBoost, LightGBM, Scikit-learn).
     - **Highlights**: Translates tree models into self-contained, optimized C code, minimizing decision tree evaluation latency to bare-metal speeds.
     - **License**: Apache 2.0
 
-20. ### 🔁 [openvino2tensorflow (PINTO0309/openvino2tensorflow)](https://github.com/PINTO0309/openvino2tensorflow) [![GitHub stars](https://img.shields.io/github/stars/PINTO0309/openvino2tensorflow?style=social&color=white)](https://github.com/PINTO0309/openvino2tensorflow/stargazers)
+20. ### 🔁 [openvino2tensorflow (PINTO0309/openvino2tensorflow)](https://github.com/PINTO0309/openvino2tensorflow) [![GitHub_Stars](https://img.shields.io/github/stars/PINTO0309/openvino2tensorflow?style=social&color=white)](https://github.com/PINTO0309/openvino2tensorflow/stargazers)
     - **Focus**: Reverse conversion utility that converts OpenVINO Intermediate Representation (IR) graphs back into TensorFlow, TFLite, and TFJS formats.
     - **Highlights**: Critical for cross-ecosystem porting when upstream training source code is missing or proprietary.
     - **License**: MIT
@@ -222,7 +222,7 @@ We actively welcome contributions to expand this directory! To add a new open-so
 1. 🍴 **Fork this repository**.
 2. 📝 **Add or edit entries in `README.md`**:
    - For **SaaS platforms**, ensure the entry is placed in the table with verified starting prices, specific free tier limits, and valuation/revenue.
-   - For **Open-Source projects**, add the social badge `[![GitHub stars](https://img.shields.io/github/stars/OWNER/REPO?style=social&color=white)](https://github.com/OWNER/REPO/stargazers)` and place it in the correct star-sorted position.
+   - For **Open-Source projects**, add the social badge `[![GitHub_Stars](https://img.shields.io/github/stars/OWNER/REPO?style=social&color=white)](https://github.com/OWNER/REPO/stargazers)` and place it in the correct star-sorted position.
 3. 🧪 **Preserve alphabetical or star-based sorting rules**.
 4. 🚀 **Submit a Pull Request** with a succinct description of the tooling addition.
 
