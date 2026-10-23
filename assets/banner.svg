@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="35%" stop-color="#a78bfa" />
+      <stop offset="70%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Node Gradient 1 -->
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Node Gradient 2 -->
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+
+    <!-- Node Gradient 3 -->
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Dynamic Flow Animations -->
+    <style>
+      .flow-line {
+        stroke-dasharray: 8, 12;
+        animation: flowDash 20s linear infinite;
+      }
+      .flow-line-reverse {
+        stroke-dasharray: 8, 12;
+        animation: flowDashRev 25s linear infinite;
+      }
+      .pulse-glow {
+        animation: pulseGlow 4s ease-in-out infinite alternate;
+      }
+      .floating-node-1 {
+        animation: floatY1 6s ease-in-out infinite alternate;
+      }
+      .floating-node-2 {
+        animation: floatY2 8s ease-in-out infinite alternate;
+      }
+      .floating-node-3 {
+        animation: floatY3 7s ease-in-out infinite alternate;
+      }
+      .beam-pulse {
+        animation: beamPulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes flowDash {
+        from { stroke-dashoffset: 400; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes flowDashRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 400; }
+      }
+      @keyframes pulseGlow {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.7; transform: scale(1.02); }
+      }
+      @keyframes floatY1 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      @keyframes floatY2 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(10px); }
+      }
+      @keyframes floatY3 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-6px); }
+      }
+      @keyframes beamPulse {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 0.8; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" fill="url(#bgGradient)" rx="16" />
+  <rect width="1200" height="380" fill="none" stroke="#1e293b" stroke-width="2" rx="16" />
+
+  <!-- Ambient Glow Background Blobs -->
+  <g class="pulse-glow" style="transform-origin: 600px 190px;">
+    <circle cx="200" cy="90" r="140" fill="#3b82f6" opacity="0.12" filter="url(#glow)" />
+    <circle cx="1000" cy="110" r="160" fill="#8b5cf6" opacity="0.12" filter="url(#glow)" />
+    <circle cx="600" cy="340" r="180" fill="#ec4899" opacity="0.08" filter="url(#glow)" />
+  </g>
+
+  <!-- Circuit / Flow Grid Canvas (Behind Title) -->
+  <g opacity="0.35">
+    <!-- Horizontal Flow Tracks -->
+    <path class="flow-line" d="M -50 90 L 1250 90" stroke="#334155" stroke-width="1.5" />
+    <path class="flow-line-reverse" d="M -50 290 L 1250 290" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Flow Curves Connecting Nodes -->
+    <path class="flow-line" d="M 120 90 C 220 90, 240 290, 360 290" stroke="#3b82f6" stroke-width="2" opacity="0.7" />
+    <path class="flow-line-reverse" d="M 840 290 C 960 290, 980 90, 1080 90" stroke="#8b5cf6" stroke-width="2" opacity="0.7" />
+    <path class="flow-line" d="M 360 290 C 480 290, 520 90, 600 90" stroke="#ec4899" stroke-width="1.8" opacity="0.5" />
+    <path class="flow-line" d="M 600 90 C 680 90, 720 290, 840 290" stroke="#06b6d4" stroke-width="1.8" opacity="0.5" />
+  </g>
+
+  <!-- Left Dynamic Format Pills (Floating in Background) -->
+  <g class="floating-node-1" transform="translate(0, 0)">
+    <!-- PyTorch Node -->
+    <g transform="translate(70, 65)">
+      <rect width="110" height="34" rx="17" fill="#1e293b" stroke="#ee4c2c" stroke-width="1.5" opacity="0.85" />
+      <circle cx="20" cy="17" r="5" fill="#ee4c2c" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">PyTorch</text>
+    </g>
+
+    <!-- TensorFlow Node -->
+    <g transform="translate(50, 140)">
+      <rect width="130" height="34" rx="17" fill="#1e293b" stroke="#ff6f00" stroke-width="1.5" opacity="0.85" />
+      <circle cx="20" cy="17" r="5" fill="#ff6f00" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">TensorFlow</text>
+    </g>
+
+    <!-- ONNX Hub Node -->
+    <g transform="translate(90, 220)">
+      <rect width="105" height="34" rx="17" fill="#1e293b" stroke="#005ced" stroke-width="1.5" opacity="0.9" />
+      <circle cx="20" cy="17" r="5" fill="#005ced" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">ONNX IR</text>
+    </g>
+  </g>
+
+  <!-- Right Dynamic Hardware Target Pills (Floating in Background) -->
+  <g class="floating-node-2" transform="translate(0, 0)">
+    <!-- TensorRT Node -->
+    <g transform="translate(1010, 65)">
+      <rect width="125" height="34" rx="17" fill="#1e293b" stroke="#76b900" stroke-width="1.5" opacity="0.85" />
+      <circle cx="20" cy="17" r="5" fill="#76b900" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">TensorRT</text>
+    </g>
+
+    <!-- OpenVINO Node -->
+    <g transform="translate(1020, 140)">
+      <rect width="125" height="34" rx="17" fill="#1e293b" stroke="#00a3e0" stroke-width="1.5" opacity="0.85" />
+      <circle cx="20" cy="17" r="5" fill="#00a3e0" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">OpenVINO</text>
+    </g>
+
+    <!-- Core ML / TFLite Node -->
+    <g transform="translate(995, 220)">
+      <rect width="145" height="34" rx="17" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" opacity="0.85" />
+      <circle cx="20" cy="17" r="5" fill="#a855f7" />
+      <text x="34" y="22" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">TFLite &amp; CoreML</text>
+    </g>
+  </g>
+
+  <!-- Animated Pulse Beams on Conversion Routes -->
+  <circle cx="280" cy="90" r="4" fill="#60a5fa" class="beam-pulse" filter="url(#subtleGlow)">
+    <animate attributeName="cx" values="180;380;180" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="920" cy="290" r="4" fill="#a78bfa" class="beam-pulse" filter="url(#subtleGlow)">
+    <animate attributeName="cx" values="1020;820;1020" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- CENTER FOREGROUND CONTENT (Protected high z-index layout, no overlapping elements) -->
+  <g transform="translate(600, 140)">
+    <!-- Category Pill -->
+    <g transform="translate(-160, -65)">
+      <rect width="320" height="28" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.95" />
+      <circle cx="16" cy="14" r="4" fill="#10b981" />
+      <text x="28" y="18" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2">
+        HARDWARE ACCELERATION &amp; COMPILATION
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="20" text-anchor="middle" fill="url(#titleGradient)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5" filter="url(#subtleGlow)">
+      Awesome Model Conversion Tools
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="60" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="400">
+      Universal IRs, Hardware Compilers, Graph Simplifiers &amp; Quantization Pipelines
+    </text>
+
+    <!-- Interoperability Pipeline Flow Bar -->
+    <g transform="translate(-310, 95)">
+      <!-- Box container -->
+      <rect width="620" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.2" opacity="0.95" />
+      
+      <!-- Stage 1 -->
+      <text x="35" y="26" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Frameworks</text>
+      <text x="120" y="26" fill="#64748b" font-family="sans-serif" font-size="14">➔</text>
+      
+      <!-- Stage 2 -->
+      <text x="155" y="26" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">ONNX / IR</text>
+      <text x="235" y="26" fill="#64748b" font-family="sans-serif" font-size="14">➔</text>
+      
+      <!-- Stage 3 -->
+      <text x="270" y="26" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Compilers &amp; TVM</text>
+      <text x="390" y="26" fill="#64748b" font-family="sans-serif" font-size="14">➔</text>
+      
+      <!-- Stage 4 -->
+      <text x="420" y="26" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">GPU • NPU • Edge Silicon</text>
+    </g>
+  </g>
+</svg>
